@@ -1,1 +1,110 @@
- 
+ .announcements{
+              background: orange;
+              background-color: orange;
+              color: black;
+              text-align: center;
+              padding: 12px;
+              font-size: 15px;
+              font-weight:bold ;
+              position: sticky;
+              z-index: 200;
+ }
+  .navbar{
+         display: flex;
+         justify-content: space-between;
+         padding: 20px;
+         color: white;
+         background: #0a0a0a;
+         text-align: center;
+         z-index: 100;
+         position: sticky;
+  }
+   .nav-links{
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+   }
+   .logo{
+        font-weight: bold;
+        font-size: 20px;
+        color: #fc0;
+   }
+    .nav-links a:hover{
+          color: #ffcc00;
+    }
+    .nav-btn{
+        background:#ffcc00;
+        color: white;
+        padding: 12px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .product img{
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+    }
+    .product{
+         display: grid;
+         grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+         gap: 15px;
+    }
+    .container{
+         padding: 20px;
+         max-width: 550px;
+         margin: auto;
+    }
+    .container h2{
+         font-size: 26px;
+         margin-bottom: 15px;
+    }
+     .slider{
+         background: #ffcc00;
+         text-align: center;
+         font-weight: bold;
+         font-size: 17px;
+     }
+     .slide{
+         display: none;
+     }
+     .slide.active{
+        display: block;
+     }
+     .main-banner{
+         background-image: url('s263blue.jpg');
+         background-size: cover;
+         background-position: center;
+         height: 380px;
+         display: flex;
+         align-items: center;
+         padding: 20px;
+         color: white;
+     }
+     .banner-text{
+         background: rgba(0,0,0,0.65);
+         padding: 25px;
+         border-radius: 15px;
+         max-width: 500px;
+     }
+     .banner-text h1{
+         font-size: 20px;
+         line-height: 1.2;
+     }
+     .banner-text h1 span{
+         margin:12px;
+         color: #ffcc00;
+     }
+     .banner-text p{
+         margin: 12px;
+         font-size: 16px;
+     }
+     .banner-btn{
+         background: #ffcc00;
+         color: black;
+         padding: 12px;
+         border-radius: 25px;
+         font-weight: bold;
+         text-decoration: none;
+     }
