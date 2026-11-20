@@ -7,8 +7,26 @@
      <link rel="stylesheet" href="skills.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script>
-    const searchInput= documents.getElementsById('searchInput'); const products= docoments.querySelectorAll('.product');searchInput.addEventlistener('input');products.forEach(function(item) {const name=item.textContent.toLowerCase();if(name.includes(word)){ item.style.display='block';}else { item.style.display='none'} });
+function searchProducts() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let products = document.querySelectorAll('.product');
+  let found = 0;
+
+  products.forEach(product => {
+    let name = product.innerText.toLowerCase();
+    if (name.includes(input)) {
+      product.style.display = "block";
+      found++;
+    } else {
+      product.style.display = "none";
+    }
+  });
+
+  // Show "No result" message if nothing found
+  document.getElementById('noResult').style.display = found === 0 ? "block" : "none";
+}
 </script>
+
  </head>
  <body>
     <input type=" text" id="searchInput" placeholder="search phones,laptops,tablets..."style="width:100%; padding: 15px;border: radius 10px;font: sze 15px;border:solid ">
